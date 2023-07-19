@@ -1,0 +1,13 @@
+<h1>Editing Book</h1>
+
+<%= form_for @book do |form| %>
+
+  <div class="actions">
+    <%= form.label :title %><br/>
+    <%= form.text_field :title, required: true %>
+    <%= form.submit %>
+  </div>
+<% end %>
+
+<%= link_to 'Show', book_path(@book) %> |
+<%= link_to 'Back', books_path %>

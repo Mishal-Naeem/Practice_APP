@@ -1,0 +1,6 @@
+var body = document.getElementById("books");
+body.innerHTML = "<%= j render @book %>" + body.innerHTML
+
+var input = document.getElementById("book_name");
+input.value = '';
+input.focus();
